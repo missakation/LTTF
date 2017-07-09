@@ -34,12 +34,39 @@ $app-direction: ltr;
 // The "primary" color is the only required color in the map.
 
 $colors: (
-  primary:    #488aff,
+  primary:    #387ef5,
   secondary:  #32db64,
   danger:     #f53d3d,
   light:      #f4f4f4,
-  dark:       #222
+  dark:       #222,
+  randem: rgb(25, 91, 155),
+  randemorange:rgb(255,162,1),
+  randemred:rgb(199,62,32),
+  randemgreen: rgb(25,156,108),
+  randemGreenButton: #199c6c,
+  randemWhite:white
 );
+
+
+$randem: rgb(25, 91, 155);
+$randemgreen: rgb(25,156,108);
+$randemyellow:#f5d000;
+$randemred:rgb(199,62,32);
+$randemorange:rgb(255,162,1);
+$randemMenuBlue: rgb(39, 77, 115);
+$randemGreenButton: #199c6c;
+$randemgray:rgb(66,79,92);
+$randemmediumgray:#d3d7db;
+$randemlightgray:rgb(155,162,168);
+$randemlightergray:rgb(224,224,224);
+$randemcgray : #d3d7db;
+$randemblack:#444444;
+$randemwhite:white;
+$randembox:rgb(232,238,245);
+$randemLightgreen: rgb(243,250,247); //#f3f7fa
+$randemDarkBlue: #071a2e;
+$randempagelightgray:rgb(238,238,238);
+$randempagedarkgray:rgb(155,162,168);
 
 
 // App iOS Variables

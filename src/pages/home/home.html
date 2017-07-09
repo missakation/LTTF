@@ -1,18 +1,209 @@
 <ion-header>
   <ion-navbar>
-    <button ion-button menuToggle>
-      <ion-icon name="menu"></ion-icon>
-    </button>
-    <ion-title>Home</ion-title>
+    <ion-grid>
+      <ion-row align-items-center>
+        <ion-col col-4 class="menuSection">
+          <button tappable ion-button menuToggle>
+                        <ion-icon name="menu"></ion-icon>
+                        <div>
+                            Menu
+                        </div>
+                    </button>
+        </ion-col>
+        <ion-col col-4 class="titleSection">
+          <ion-title>
+            <h5>Homepage</h5>
+          </ion-title>
+        </ion-col>
+        <ion-col col-4 class="buttonsSection">
+        </ion-col>
+      </ion-row>
+    </ion-grid>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  <h3>Ionic Menu Starter</h3>
+<ion-content class="page" padding>
+  <ion-grid no-padding class="fullheight">
+    <ion-row class="fullheight">
+      <ion-col col-12 col-sm-12 col-md-12 col-lg class="round-corner news-Container">
+        <div class="news-title">
+          <h6 class="sectionTitle">
+            News
+          </h6>
+        </div>
 
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will show you the way.
-  </p>
+        <div id="news-content">
+          <ion-scroll scrollY="true" style="height: 80vh;">
+            <ion-spinner class="loading-center" *ngIf="loadingnews"></ion-spinner>
 
-  <button ion-button secondary menuToggle>Toggle Menu</button>
+            <ion-card class="news-item" (click)="OpenNewsDetails(item)">
+              <ion-card-content>
+                <ion-grid no-padding>
+                  <ion-row>
+                    <ion-col col-11>
+                      <!--*ngIf="!item.MainMediaUrl==''" -->
+                      <img src="" />
+                      <div class="news-item-title">
+                        <div class="categoryText">aa</div>
+                        <div class="titleText">bb</div>
+                        <div class="dateText">cc</div>
+                      </div>
+                    </ion-col>
+                    <ion-col *ngIf="false" col-1 align="right">
+                      <ion-icon name="share-alt" tappable (click)="SendEmail(item)"></ion-icon>
+                    </ion-col>
+                  </ion-row>
+                  <ion-row class="paddingtop-15">
+                    <p class="contentText">bb</p>
+                  </ion-row>
+                </ion-grid>
+              </ion-card-content>
+            </ion-card>
+
+            <ion-card class="news-item" (click)="OpenNewsDetails(item)">
+              <ion-card-content>
+                <ion-grid no-padding>
+                  <ion-row>
+                    <ion-col col-11>
+                      <!--*ngIf="!item.MainMediaUrl==''" -->
+                      <img src="" />
+                      <div class="news-item-title">
+                        <div class="categoryText">aa</div>
+                        <div class="titleText">bb</div>
+                        <div class="dateText">cc</div>
+                      </div>
+                    </ion-col>
+                    <ion-col *ngIf="false" col-1 align="right">
+                      <ion-icon name="share-alt" tappable (click)="SendEmail(item)"></ion-icon>
+                    </ion-col>
+                  </ion-row>
+                  <ion-row class="paddingtop-15">
+                    <p class="contentText">bb</p>
+                  </ion-row>
+                </ion-grid>
+              </ion-card-content>
+            </ion-card>
+
+            <ion-card class="news-item" (click)="OpenNewsDetails(item)">
+              <ion-card-content>
+                <ion-grid no-padding>
+                  <ion-row>
+                    <ion-col col-11>
+                      <!--*ngIf="!item.MainMediaUrl==''" -->
+                      <img src="" />
+                      <div class="news-item-title">
+                        <div class="categoryText">aa</div>
+                        <div class="titleText">bb</div>
+                        <div class="dateText">cc</div>
+                      </div>
+                    </ion-col>
+                    <ion-col *ngIf="false" col-1 align="right">
+                      <ion-icon name="share-alt" tappable (click)="SendEmail(item)"></ion-icon>
+                    </ion-col>
+                  </ion-row>
+                  <ion-row class="paddingtop-15">
+                    <p class="contentText">bb</p>
+                  </ion-row>
+                </ion-grid>
+              </ion-card-content>
+            </ion-card>
+
+          </ion-scroll>
+        </div>
+      </ion-col>
+
+      <ion-col col-12 col-sm-12 col-md-12 col-lg class="round-corner news-Container">
+        <div class="news-title">
+          <h6 class="sectionTitle">
+            Events
+          </h6>
+        </div>
+
+        <div id="news-content">
+          <ion-scroll scrollY="true" style="height: 80vh;">
+            <ion-spinner class="loading-center" *ngIf="loadingnews"></ion-spinner>
+
+            <ion-card class="news-item" (click)="OpenNewsDetails(item)">
+              <ion-card-content>
+                <ion-grid no-padding>
+                  <ion-row>
+                    <ion-col col-11>
+                      <!--*ngIf="!item.MainMediaUrl==''" -->
+                      <img src="" />
+                      <div class="news-item-title">
+                        <div class="categoryText">aa</div>
+                        <div class="titleText">bb</div>
+                        <div class="dateText">cc</div>
+                      </div>
+                    </ion-col>
+                    <ion-col *ngIf="false" col-1 align="right">
+                      <ion-icon name="share-alt" tappable (click)="SendEmail(item)"></ion-icon>
+                    </ion-col>
+                  </ion-row>
+                  <ion-row class="paddingtop-15">
+                    <p class="contentText">bb</p>
+                  </ion-row>
+                </ion-grid>
+              </ion-card-content>
+            </ion-card>
+
+            <ion-card class="news-item" (click)="OpenNewsDetails(item)">
+              <ion-card-content>
+                <ion-grid no-padding>
+                  <ion-row>
+                    <ion-col col-11>
+                      <!--*ngIf="!item.MainMediaUrl==''" -->
+                      <img src="" />
+                      <div class="news-item-title">
+                        <div class="categoryText">aa</div>
+                        <div class="titleText">bb</div>
+                        <div class="dateText">cc</div>
+                      </div>
+                    </ion-col>
+                    <ion-col *ngIf="false" col-1 align="right">
+                      <ion-icon name="share-alt" tappable (click)="SendEmail(item)"></ion-icon>
+                    </ion-col>
+                  </ion-row>
+                  <ion-row class="paddingtop-15">
+                    <p class="contentText">bb</p>
+                  </ion-row>
+                </ion-grid>
+              </ion-card-content>
+            </ion-card>
+
+            <ion-card class="news-item" (click)="OpenNewsDetails(item)">
+              <ion-card-content>
+                <ion-grid no-padding>
+                  <ion-row>
+                    <ion-col col-11>
+                      <!--*ngIf="!item.MainMediaUrl==''" -->
+                      <img src="" />
+                      <div class="news-item-title">
+                        <div class="categoryText">aa</div>
+                        <div class="titleText">bb</div>
+                        <div class="dateText">cc</div>
+                      </div>
+                    </ion-col>
+                    <ion-col *ngIf="false" col-1 align="right">
+                      <ion-icon name="share-alt" tappable (click)="SendEmail(item)"></ion-icon>
+                    </ion-col>
+                  </ion-row>
+                  <ion-row class="paddingtop-15">
+                    <p class="contentText">bb</p>
+                  </ion-row>
+                </ion-grid>
+              </ion-card-content>
+            </ion-card>
+
+          </ion-scroll>
+          <ion-footer class="dash-footer center">
+            <button ion-button outline class="calendar-button" (click)="OpenCalendar()">
+                        <ion-icon name="calendar" style="margin-right: 10px"></ion-icon>
+                        <h6>View Calendar</h6>
+                    </button>
+          </ion-footer>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>

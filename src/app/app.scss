@@ -1,16 +1,1457 @@
-// http://ionicframework.com/docs/v2/theming/
+::-webkit-scrollbar {
+    display: none;
+}
+
+.groupsSection .col {
+    padding: 0 !important;
+}
+
+.float-right {
+    float: right;
+}
+
+.button.CancelButton {
+    background-color: white;
+    color: grey;
+    height: 40px;
+    width: 50%;
+    border: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    text-align: center;
+    text-transform: none;
+}
+
+.button.CreateButton {
+    background-color: seagreen;
+    color: white;
+    height: 40px;
+    width: 50%;
+    border: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    text-align: center;
+    text-transform: none;
+}
+
+.button.CreateButton:hover {
+    background-color: #199c6c;
+}
+
+.button.CancelButton:hover {
+    background-color: lightgray;
+}
+
+h6 {
+    margin-top: 1.6rem;
+    margin-bottom: 1rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+/***** Validation *****/
+
+.error {
+    background-color: $randemred;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 10px 10px 10px 10px;
+    color: white;
+}
+
+.error ion-icon {
+    padding-right: 5px;
+}
+
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+    background-color: rgb(225, 225, 225) !important;
+    background-image: none;
+    color: rgb(0, 0, 0);
+}
+/***** Loading *****/
+
+ion-spinner {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+
+    .z-index {
+        z-index: 2;
+    }
+}
+
+.load-more {
+
+    ion-spinner {
+        left: auto;
+        top: auto;
+    }
+}
+/***** Menu *****/
+
+.header::after,
+.tabs[tabsPlacement="top"] > .tabbar::after,
+.footer::before,
+.tabs[tabsPlacement="bottom"] > .tabbar::before {
+    background-image: none;
+}
+
+ion-header {
+    .navbar {
+        padding: 0;
+        box-shadow: 0 4px 2px -2px #aeaeae;
+    }
+
+    .navbarSection {
+        padding: 8px 8px 0px 8px;
+    }
+
+    .menuSection {
+        text-align: left;
+
+        button:hover, button {
+            color: white !important;
+
+            div {
+                margin-left: 10px;
+            }
+        }
+    }
+
+    .titleSection {
+        text-align: center;
+
+        ion-title h5 {
+            font-size: 16px;
+            color: white;
+        }
+    }
+
+    .buttonsSection {
+        text-align: right;
+
+        button {
+            background-color: #ffffff;
+            color: $randemblack;
+            font-weight: bolder;
+            text-transform: none;
+            font-size: 12px;
+        }
+
+        button:hover {
+            background-color: #ffffff !important;
+            color: $randemblack;
+            font-weight: bolder;
+            text-transform: none;
+            font-size: 12px;
+        }
+
+        ion-icon {
+            padding-left: 10px;
+            padding-right: 10px;
+            font-size: 16px;
+        }
+    }
+
+    .categoriesSection {
+        background-color: $randem;
+        overflow: hidden;
+        height: 4.19rem;
+        font-weight: normal;
+        border-bottom-width: 3px;
+        font-weight: 400;
+
+        .segment .segment-button h6 {
+            color: white;
+            font-weight: 500;
+            border-bottom-width: 2px;
+            font-weight: 400;
+        }
+
+        .segment .segment-button.activated, .segment .segment-button.segment-activated {
+            opacity: 1;
+            border-color: white;
+            border-bottom-width: 2px;
+            font-weight: 400;
+        }
 
 
-// App Global Sass
-// --------------------------------------------------
-// Put style rules here that you want to apply globally. These
-// styles are for the entire app and not just one component.
-// Additionally, this file can be also used as an entry point
-// to import other Sass files to be included in the output CSS.
-//
-// Shared Sass variables, which can be used to adjust Ionic's
-// default Sass variables, belong in "theme/variables.scss".
-//
-// To declare rules for a specific mode, create a child rule
-// for the .md, .ios, or .wp mode classes. The mode class is
-// automatically applied to the <body> element in the app.
+        ion-scroll {
+            height: 42px;
+        }
+
+        ion-segment {
+            width: 100%;
+        }
+
+        .filterSection {
+            div {
+                display: inline-block;
+            }
+
+            .filter-icon {
+                font-size: 26px;
+                color: $randem;
+                margin-left: 15px;
+                font-weight: bolder;
+            }
+
+            .filter-searchbar {
+                position: relative;
+                margin-left: 10px;
+            }
+        }
+    }
+
+    ion-item.item.item-block.item-md {
+        text-align: center;
+    }
+
+    ion-scroll[scrollX] {
+        white-space: nowrap;
+        overflow: hidden;
+    }
+
+    .scroll-item {
+        display: inline-block;
+    }
+
+    .groupsSection {
+        background-color: white;
+        overflow: hidden;
+        height: 42px;
+        box-shadow: 0 4px 2px -2px gray;
+
+        ion-scroll {
+            height: 42px;
+            width: 100%;
+        }
+
+        ion-segment {
+            width: auto;
+        }
+
+        .segment .segment-button h6 {
+            color: $randem;
+            border-bottom-width: 2px;
+            font-weight: 500;
+        }
+
+        .segment .segment-button.activated, .segment .segment-button.segment-activated {
+            opacity: 1;
+            border-color: $randem;
+            border-bottom-width: 2px;
+            font-weight: 500;
+        }
+
+        .filterSection {
+            div {
+                display: inline-flex;
+            }
+
+            .filter-icon {
+                font-size: 26px;
+                color: $randem;
+                margin-left: 15px;
+                font-weight: bolder;
+            }
+
+            .filter-searchbar {
+                position: relative;
+                margin-left: 10px;
+            }
+        }
+    }
+}
+
+/***** Grid *****/
+
+.gv {
+    ion-card {
+        ion-row {
+            height: 50px;
+            padding: 4px;
+            background-color: white;
+
+            ion-col {
+                height: 100%;
+            }
+            // Time Box
+            .time-box {
+                display: table;
+                float: left;
+                height: 100%;
+                box-sizing: border-box;
+                width: 90px;
+                background-color: rgb(232, 238, 245);
+                text-align: center;
+                padding: 6px 12px 6px 12px;
+
+                .time {
+                    font-size: 12px;
+                    font-weight: bold;
+                    color: $randemblack;
+                }
+
+                .date {
+                    font-size: 11px;
+                    color: $randemlightgray;
+                }
+            }
+            /*.time-box > div {
+                display: table-cell;
+                vertical-align: middle;
+            }*/
+            // Text Section
+            .text-section {
+                display: table;
+                float: left;
+                text-align: initial;
+                padding: 0.393em 0;
+
+                h6.customer-text {
+                    font-size: 12px;
+                    color: $randem;
+                    font-weight: bolder;
+                    margin: 0;
+                }
+
+                .category-text {
+                    font-size: 11px;
+                    color: $randemlightgray;
+                }
+            }
+
+            .text-section > div {
+                display: table-cell;
+                vertical-align: middle;
+            }
+
+            .img-section {
+                float: left;
+
+                ion-item {
+                    width: 60px;
+
+                    ion-avatar {
+                        ion-icon {
+                            font-size: 40px;
+                            color: $randem;
+                        }
+                    }
+                }
+            }
+            // Buttons
+            button {
+                float: right;
+                height: 100%;
+                box-sizing: border-box;
+                margin: 0px;
+                width: 80px;
+                padding: 5px 5px 5px 5px;
+            }
+        }
+    }
+}
+/***** Common *****/
+
+.filter-search {
+    .searchbar .searchbar-input {
+        width: 100%;
+    }
+}
+
+.categoryText {
+    text-transform: uppercase;
+    font-size: 10px;
+    color: $randemblack;
+}
+
+h6.customer-text {
+    color: $randem;
+    font-weight: bolder;
+}
+
+.titleText {
+    font-weight: bold;
+    color: $randemblack;
+}
+
+h6.titleBlueText {
+    color: $randem;
+}
+
+h6.modal-title {
+    color: $randem;
+    font-size: 14px;
+    font-size: bold;
+}
+
+.dateText {
+    font-size: 11px;
+    color: $randemblack;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6.bold {
+    font-weight: bolder;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6.bold-400 {
+    font-weight: 400;
+}
+
+h6.sectionTitle {
+    color: $randem;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-weight: bolder;
+    margin-bottom: 0px;
+}
+
+.minitext {
+    font-size: 12px;
+    color: white;
+}
+
+.small-text {
+    font-size: 13px;
+}
+
+.login-title {
+    font-size: 13px;
+    color: $randem;
+}
+
+.margintop-15 {
+    margin-top: 15px;
+}
+
+.margintop-20 {
+    margin-top: 20px;
+}
+
+.marginright-10 {
+    margin-right: 10px;
+}
+
+.height-100 {
+    height: 100%;
+}
+
+ion-row.paddingtop-15 {
+    padding-top: 15px;
+}
+
+.center {
+    text-align: center;
+}
+
+.fullheight {
+    height: 100%;
+}
+
+.round-corner {
+    border-radius: 2px;
+}
+
+.button {
+    width: 215px;
+    /*height: 50px;*/
+    text-transform: none;
+    box-shadow: 0 -1px 2px 0px rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+    transition: none;
+}
+
+.button:hover {
+    cursor: pointer;
+    box-shadow: 0 0 8px rgba(138, 138, 138, 0.6);
+}
+
+.button.green {
+    background-color: $randemgreen;
+    color: white;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.button.green:hover {
+    background-color: $randemgreen;
+}
+
+.menuitemsclass {
+    background-color: transparent;
+    color: white;
+    margin-left: 10px;
+}
+
+.menuitemsclass:active {
+    background-color: $randem;
+}
+
+.modal-wrapper {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+@media not all and (min-height: 600px) and (min-width: 768px) {
+    ion-modal ion-backdrop {
+        visibility: hidden;
+    }
+}
+
+@media only screen and (min-height: 0px) and (min-width: 0px) {
+    .modal-wrapper {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.menu-footer {
+    background-color: rgb(66, 79, 92);
+}
+
+.randem-theme {
+    color: $randem;
+}
+
+.randem-background {
+    background-color: $randem;
+}
+
+.errortext {
+    color: $randemred;
+    font-size: 11px;
+}
+
+button {
+    text-transform: none;
+}
+//For Modal of Full Screen
+.closefullmodal {
+    font-size: 20px;
+    color: white;
+}
+
+.closemodal {
+    font-size: 30px;
+    color: white;
+    margin-left: 15px;
+    position: static !important;
+}
+// *******MODAL SIZE DEFAULT - OVERRIDE IF NECCESSARY*****
+.main-view {
+    background: transparent;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: .9;
+    background-color: #071b2d;
+}
+
+.modal_content {
+    position: absolute;
+    top: calc(50% - (50%/2));
+    left: 0;
+    right: 0;
+    width: 40%;
+    height: 40%;
+    padding: 10px;
+    z-index: 100;
+    margin: 0 auto;
+    padding: 10px;
+    color: #333;
+    background: #e8e8e8;
+    background: -moz-linear-gradient(top, #fff 0%, #e8e8e8 100%);
+    background: -webkit-linear-gradient(top, #fff 0%, #e8e8e8 100%);
+    background: linear-gradient(to bottom, #fff 0%, white 100%);
+    border-radius: 2px;
+    box-shadow: 0 2px 3px rgba(51, 51, 51, .35);
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    overflow: hidden;
+}
+// **** ////
+// ****ICONS**** //
+.alerticon {
+    font-size: 50px;
+    color: rgb(199, 62, 32);
+}
+///////////////////
+// **TEXT** ///
+ion-title {
+    h5 {
+        color: white;
+        //margin-bottom: 0;
+    }
+}
+
+.bar-button-menutoggle ion-icon {
+    padding: 0 6px;
+    font-size: 2.8rem;
+}
+
+.dashboardContainer {
+    margin-right: 9px rgb(155, 162, 168);
+    overflow: hidden;
+}
+// ****BUTTONS****//
+.menuButton {
+    color: white;
+    padding-top: 6px;
+    margin-right: 10px;
+
+    div {
+        font-size: 13px;
+        margin-left: 6px;
+    }
+}
+
+#button-hoverwhite .bar-button-default:hover:not(.disable-hover),
+.bar-button-clear-default:hover:not(.disable-hover),
+.bar-button-default:hover:not(.disable-hover) {
+    color: white;
+}
+
+.button.RandemRed-Medium {
+    border-color: $randemred;
+    color: $randemred;
+    width: 150px;
+    margin-left: 5%;
+    margin-right: 5%;
+    text-transform: none;
+}
+
+.button.RandemGreen {
+    background-color: $randemgreen;
+    color: white;
+    width: 300px;
+    text-transform: none;
+    box-shadow: 0 -1px 2px 0px rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+}
+
+.button.RandemGreen-Medium {
+    background-color: $randemgreen;
+    color: white;
+    width: 150px;
+    margin-left: 5%;
+    margin-right: 5%;
+    text-transform: none;
+}
+
+.button.RandemGreen-Small {
+    background-color: $randemgreen;
+    color: white;
+    width: 100px;
+    height: 50px;
+    margin-left: 5%;
+    margin-right: 5%;
+    text-transform: none;
+}
+
+.button.RandemOrange-Small {
+    background-color: $randemorange;
+    color: white;
+    width: 100px;
+    height: 50px;
+    margin-left: 5%;
+    margin-right: 5%;
+    text-transform: none;
+}
+
+.button.RandemOrange-Small:hover {
+    background-color: burlywood;
+}
+
+.button.RandemGreen:hover,
+.button.RandemGreen-Small:hover,
+.button.RandemGreen-Medium:hover {
+    background-color: $randemgreen;
+}
+
+.button.RandemRed-Medium {
+    background-color: $randemred;
+    color: white;
+    width: 150px;
+    margin-left: 5%;
+    margin-right: 5%;
+    text-transform: none;
+}
+
+.button.RandemRed-Medium:hover {
+    background-color: firebrick;
+}
+
+.button.CancelButton:hover {
+    background-color: lightgray;
+}
+
+.button.RandemGreen-Smalle {
+    background-color: $randemgreen;
+    color: white;
+    width: 100%;
+    margin-left: 5%;
+    margin-right: 5%;
+    text-transform: none;
+}
+
+.button.RandemWhite-Medium {
+    background-color: white;
+    color: $randem;
+    width: 150px;
+    text-transform: none;
+}
+
+.button.RandemWhite-Small {
+    background-color: white;
+    color: $randem;
+    width: 100%;
+    text-transform: none;
+}
+
+.start-callbutton {
+    background-color: rgb(243, 250, 247);
+    color: $randemblack;
+    font-weight: bolder;
+    text-transform: none;
+
+    ion-icon {
+        color: $randemorange;
+    }
+
+    box-shadow: none;
+}
+
+.searchbar .searchbar-input {
+    background-color: rgb(232, 238, 245);
+    color: $randem;
+    width: 180px;
+    height: 30px;
+    font-size: 14px;
+}
+
+.searchbar .searchbar-search-icon,
+.searchbar .searchbar-cancel {
+    color: $randem;
+    top: 5px;
+}
+
+.button.RandemCalendar {
+    border-radius: 10px;
+    text-transform: none;
+    color: rgb(25, 91, 155);
+}
+////////////////////
+.blueText {
+    color: $randem;
+}
+
+.alert .alert-wrapper {
+    max-width: none;
+}
+
+.menuToolbar {
+    background-color: white;
+    padding: 0;
+    margin: 0;
+}
+
+.menuTitle {
+    height: 100px;
+    background-color: white;
+    text-align: center;
+}
+
+.menuTitle h1 {
+    color: $randemMenuBlue;
+    font-weight: bolder;
+    font-size: 32px;
+    font-style: italic;
+    text-transform: uppercase;
+}
+
+.menuContent {
+    background-color: $randemMenuBlue;
+}
+
+.menuContent .list {
+    background-color: transparent;
+    margin-top: 20px;
+    padding-left: 10px;
+}
+
+ion-select {
+    max-width: none;
+}
+
+.select {
+    padding: 13px 8px 13px 0px;
+}
+
+.ion-content {
+    background-color: #f2f2f2;
+}
+///**colors***///
+.color-orange {
+    color: $randemorange;
+}
+
+.color-yellow {
+    color: $randemyellow;
+}
+
+.color-green {
+    color: $randemgreen;
+}
+
+.color-blue {
+    color: $randem;
+}
+
+.color-red {
+    color: $randemred;
+}
+
+.color-gray {
+    color: $randemgray;
+}
+
+.color-lightgray {
+    color: $randemlightgray;
+}
+
+.color-lightergray {
+    color: $randemlightergray;
+}
+
+.color-black {
+    color: $randemblack;
+}
+
+h1.color-black,
+h2.color-black,
+h3.color-black,
+h4.color-black,
+h5.color-black,
+h6.color-black {
+    color: $randemblack;
+}
+
+h1.color-blue,
+h2.color-blue,
+h3.color-blue,
+h4.color-blue,
+h5.color-blue,
+h6.color-blue {
+    color: $randem;
+}
+
+h1.color-white,
+h2.color-white,
+h3.color-white,
+h4.color-white,
+h5.color-white,
+h6.color-white {
+    color: $randemwhite;
+}
+
+h1.color-red,
+h2.color-red,
+h3.color-red,
+h4.color-red,
+h5.color-red,
+h6.color-red {
+    color: $randemred;
+}
+
+h1.color-green,
+h2.color-green,
+h3.color-green,
+h4.color-green,
+h5.color-green,
+h6.color-green {
+    color: $randemgreen;
+}
+
+h1.color-orange,
+h2.color-orange,
+h3.color-orange,
+h4.color-orange,
+h5.color-orange,
+h6.color-orange {
+    color: $randemorange;
+}
+
+h1.color-gray,
+h2.color-gray,
+h3.color-gray,
+h4.color-gray,
+h5.color-gray,
+h6.color-gray {
+    color: $randemlightgray;
+}
+
+
+.item-input .label,
+.item-select .label,
+.item-datetime .label {
+    color: $randemblack;
+}
+
+ion-icon.color-blue {
+    color: $randem;
+}
+
+ion-icon.color-red {
+    color: $randemred;
+}
+
+ion-icon.color-green {
+    color: $randemgreen;
+}
+
+h6.color-textgreen {
+    color: #1b9d6d;
+    font-weight: bold;
+}
+
+h6.color-textorange {
+    color: #ffb026;
+    font-weight: bold;
+}
+
+color-graymenu {
+    color: #55606c;
+}
+/////////////////////
+///**back colors***///
+.backcolor-orange {
+    background-color: $randemorange;
+}
+
+.backcolor-lightorange {
+    background-color: #faf3e8;
+}
+
+.backcolor-white {
+    background-color: white;
+}
+
+.backcolor-green {
+    background-color: $randemgreen;
+}
+
+.backcolor-red {
+    background-color: $randemred;
+}
+
+.backcolor-blue {
+    background-color: $randem;
+}
+
+.backcolor-gray {
+    background-color: $randemgray;
+}
+
+.backcolor-cgray {
+    background-color: $randemcgray;
+}
+
+.backcolor-lightgray {
+    background-color: $randemlightgray;
+}
+
+.backcolor-lightergray {
+    background-color: $randemlightergray;
+}
+
+.backcolor-page {
+    background-color: rgb(155, 162, 168);
+}
+
+.backcolor-pagegray {
+    background-color: $randempagelightgray;
+}
+
+.backcolor-darkgray {
+    background-color: $randempagedarkgray;
+}
+/////////////////////
+//***** Heights and Widths *****//
+.height-25 {
+    height: 25%;
+}
+
+.height-50 {
+    height: 50%;
+}
+
+.height-75 {
+    height: 75%;
+}
+
+.height-100 {
+    width: 100%;
+}
+
+.width-25 {
+    width: 25%;
+}
+
+.width-50 {
+    width: 50%;
+}
+
+.width-75 {
+    width: 75%;
+}
+
+.width-100 {
+    width: 100%;
+}
+//////////////////////
+[icon-left] ion-icon {
+    font-size: 16px;
+}
+//****GLOBAL****//
+h1,
+h2,
+h3,
+h4,
+h5,
+h6.fontsize-10 {
+    font-size: 10px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6.fontsize-11 {
+    font-size: 11px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6.fontsize-12 {
+    font-size: 12px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6.fontsize-13 {
+    font-size: 13px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6.fontsize-14 {
+    font-size: 14px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6.fontsize-16 {
+    font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6.fontsize-18 {
+    font-size: 18px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6.fontsize-20 {
+    font-size: 20px;
+}
+
+.menu-footer {
+    background-color: $randemgray;
+    height: 34px;
+
+    h6 {
+        color: white;
+        font-size: 10px;
+    }
+
+    ion-icon {
+        color: white;
+        margin-right: 20px;
+    }
+}
+
+p.large-dots {
+    font-size: 20px;
+    font-weight: bolder;
+    color: $randemblack;
+}
+
+p.big-dots {
+    font-size: 30px;
+}
+
+.version-text {
+    margin-top: 0;
+    font-size: 10px;
+    color: white;
+}
+
+.customer-popover {
+    padding: 2% 2% 0 2%;
+
+    h6 {
+        font-weight: bolder;
+    }
+}
+
+.radiusSemCircle {
+    border-radius: 3px;
+}
+
+.menu-button {
+    color: white;
+    padding-top: 6px;
+}
+
+ion-segment {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    font-weight: 400;
+}
+
+.segment .segment-button h6 {
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.segment .segment-button {
+    display: inline-flex;
+    width: auto;
+    padding: 0;
+    margin-left: 5px;
+    margin-right: 15px;
+    border: none;
+    text-transform: none;
+
+    h6 {
+        font-weight: 400;
+    }
+}
+
+.no-padding {
+    padding: 0;
+    margin: 0;
+}
+
+.segment .segment-button.activated,
+.segment .segment-button.segment-activated {
+    border-bottom: 2px;
+    border-bottom-style: solid;
+    border-bottom-color: currentColor;
+}
+
+.list .item-input.ng-valid.input-has-value:not(.input-has-focus):last-child,
+.item.item-input.ng-valid.input-has-value:not(.input-has-focus) .item-inner,
+.item.item-input.ng-valid.input-has-value:not(.input-has-focus) .item-inner,
+.item.item-input.input-has-focus .item-inner,
+.list .item-input.input-has-focus:last-child,
+.item.item-input.ng-valid.input-has-value:not(.input-has-focus) .item-inner,
+.list .item-input.ng-valid.input-has-value:not(.input-has-focus):last-child,
+.item.item-input.ng-invalid.ng-touched:not(.input-has-focus) .item-inner,
+.list .item-input.ng-invalid.ng-touched:not(.input-has-focus):last-child {
+    border-bottom-color: #dedede;
+    box-shadow: none;
+}
+
+.ion-title-tasks {
+    text-align: center;
+    font-size: 14px;
+}
+// TODO
+.toolbar-background {
+    background-color: rgb(25, 91, 155);
+    color: white;
+}
+
+.whitetext {
+    color: white;
+}
+
+.randemblue {
+    color: rgb(25, 91, 155);
+}
+
+h1.lightgreytext,
+h2.lightgreytext,
+h3.lightgreytext,
+h4.lightgreytext,
+h5.lightgreytext,
+h6.lightgreytext {
+    color: gray;
+}
+
+.greenbutton {
+    background-color: green;
+}
+
+.randemButtonCentered {
+    margin: auto;
+    display: block;
+}
+
+.fullsize {
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    border: none;
+    background-color: white;
+    color: white;
+}
+
+.mainbackground {
+    background-color: rgb(25, 91, 155);
+}
+
+.selectable {
+    -moz-user-select: text;
+    -webkit-user-select: text;
+    -ms-user-select: text;
+    -o-user-select: text;
+    user-select: text;
+}
+
+.shodow-bottom {
+    -moz-box-shadow: 0 0 8px 0 black;
+    -webkit-box-shadow: 0 0 8px 0 black;
+    box-shadow: 0 0 8px 0 black;
+}
+
+.nopadding {
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+}
+
+.nopadding-side {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.nopadding-top {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.nopadding {
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+}
+
+.icon-big {
+    color: rgb(25, 91, 155);
+    font-size: 40px;
+}
+
+.icon-medium {
+    font-size: 30px;
+}
+
+.blackdots {
+    color: darkgray;
+    font-size: 8px;
+}
+
+h1.RandemGreen,
+h2.RandemGreen,
+h3.RandemGreen,
+h4.RandemGreen,
+h5.RandemGreen,
+h6.RandemGreen {
+    color: seagreen;
+    font-weight: bolder;
+    text-transform: none;
+}
+
+h1.RandemOrange,
+h2.RandemOrange,
+h3.RandemOrange,
+h4.RandemOrange,
+h5.RandemOrange,
+h6.RandemOrange {
+    color: orange;
+    font-weight: bolder;
+}
+
+h1.RandemRed,
+h2.RandemRed,
+h3.RandemRed,
+h4.RandemRed,
+h5.RandemRed,
+h6.RandemRed {
+    color: indianred;
+}
+
+h1.RandemWhite,
+h2.RandemWhite,
+h3.RandemWhite,
+h4.RandemWhite,
+h5.RandemWhite,
+h6.RandemWhite {
+    color: white;
+    font-weight: bolder;
+}
+
+.radio .radio-inner {
+    position: absolute;
+    top: 2.5px;
+    left: 2px;
+    width: 8px;
+    height: 8px;
+}
+
+.padding-three {
+    padding: 3% 3% 3% 3%;
+}
+
+ion-button {
+    text-transform: none;
+}
+
+// Resources Section
+
+.path {
+    float: left;
+    margin-left: 5px;
+
+    h6 {
+        font-size: 13px;
+
+        ion-icon {
+            margin-left: 5px;
+        }
+    }
+
+    h6:hover {
+        text-decoration: underline;
+        cursor: pointer;
+    }
+}
+
+.folder {
+    text-align: left;
+
+
+    ion-card {
+        height: 200px;
+        width: 100%;
+        position: relative;
+        text-align: center;
+        padding: 0;
+        background-color: white;
+    }
+
+    .bg-blue {
+        background: #2178ce; /* For browsers that do not support gradients */
+        background: -webkit-linear-gradient(left top, #2178ce, #268cf2); /* For Safari 5.1 to 6.0 */
+        background: -o-linear-gradient(bottom right, #2178ce, #268cf2); /* For Opera 11.1 to 12.0 */
+        background: -moz-linear-gradient(bottom right, #2178ce, #268cf2); /* For Firefox 3.6 to 15 */
+        background: linear-gradient(to bottom right, #2178ce, #268cf2); /* Standard syntax (must be last) */
+        min-height: 140px;
+    }
+
+    .bg-red {
+        background: #c73e20; /* For browsers that do not support gradients */
+        background: -webkit-linear-gradient(left top, #c73e20, #e86548); /* For Safari 5.1 to 6.0 */
+        background: -o-linear-gradient(bottom right, #c73e20, #e86548); /* For Opera 11.1 to 12.0 */
+        background: -moz-linear-gradient(bottom right, #c73e20, #e86548); /* For Firefox 3.6 to 15 */
+        background: linear-gradient(to bottom right, #c73e20, #e86548); /* Standard syntax (must be last) */
+        min-height: 140px;
+    }
+
+    ion-icon.icon-file {
+        color: white;
+        font-size: 10rem;
+        margin-left: auto;
+        margin-right: auto;
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+    }
+
+    .icon-bg {
+        position: absolute;
+        height: 140px;
+        width: 100%;
+        display: table;
+    }
+
+    .image-box {
+        padding: 0;
+        margin: 0;
+        height: 60%;
+        width: 100%;
+    }
+
+    .folder-box {
+        text-align: left;
+        margin-top: 15px;
+        margin-left: 15px;
+        padding-bottom: 15px;
+
+        h6 {
+            padding: 0;
+            margin: 0;
+            font-size: 12px;
+        }
+    }
+}
+
+
+ 
+
+
+//End Resources Section
