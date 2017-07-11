@@ -23,7 +23,7 @@
             <ion-segment-button value="0">
               <h6>
                 All
-              </h6> 
+              </h6>
             </ion-segment-button>
             <ion-segment-button value="1">
               <h6>
@@ -60,133 +60,122 @@
   <div style="margin:8px">
     <div>
       <ion-grid>
-        <ion-spinner class="loading-center" *ngIf="loadingCustomers"></ion-spinner>
-        <ion-row>
-          <ion-col class="column-bold" style="margin-left:75px">
-            Player Details
+        <ion-row align-items-center>
+          <ion-col col-1>
+
           </ion-col>
-          <ion-col col-3 class="column-bold">
+          <ion-col col-3 align="left">
+            Name
           </ion-col>
-          <ion-col col-6 class="column-bold" no-padding>
-            <ion-grid>
-              <ion-row>
-                <ion-col col-4 class="img-section1">
-                  <!--Month to Date Sells-->
-                </ion-col>
-                <ion-col col-6 align="left" class="img-section1">
-                  Info
-                </ion-col>
-              </ion-row>
-            </ion-grid>
+          <ion-col col-1 align="left">
+            <h6>
+              Rank
+            </h6>
           </ion-col>
+
         </ion-row>
       </ion-grid>
       <div>
         <ion-card class="customer-section">
           <ion-grid no-padding>
             <ion-row align-items-center style="background-color:white">
-              <ion-col col-md-6 col-sm-12 col-xs-12>
-                <ion-grid no-padding>
-                  <ion-row align-items-center class="cust-title">
-                    <ion-col col-6 tappable align="left">
-                      <ion-item>
-                        <ion-avatar item-left class="img-section1" style="max-width: 20px">
-                          <ion-icon name="contact" class="icon-big"></ion-icon>
-                          <!--<ion-icon name="contact" class="icon-big" *ngIf="item.MainMediaUrl == ''"></ion-icon>
+              <ion-col col-1>
+                <ion-item>
+                  <ion-avatar item-left class="img-section1" style="max-width: 20px">
+                    <ion-icon name="contact" class="icon-big"></ion-icon>
+                    <!--<ion-icon name="contact" class="icon-big" *ngIf="item.MainMediaUrl == ''"></ion-icon>
                                                     <img src="{{item.MainMediaUrl}}&r=1" *ngIf="item.MainMediaUrl != ''" />-->
-                        </ion-avatar>
-                        <h6 class="customer-text">Missak Boyajian</h6>
-                      </ion-item>
-                    </ion-col>
-                    <ion-col col-6 align="center">
-                      <div style="float:left" class="customers-category-button">
-                        <h6 class="categorytext">
+                  </ion-avatar>
 
-                        </h6>
-                      </div>
-                      <div style="float:left;margin-left:5px" class="customers-group-button">
-                        <h6 class="subcategorytext-list">
+                </ion-item>
+              </ion-col>
+              <ion-col col-3 align="left">
+                <h6 class="customer-text">Missak Boyajian</h6>
+              </ion-col>
+              <ion-col col-1 align="left">
+                <h6 class="customer-text">1</h6>
+              </ion-col>
 
-                        </h6>
-                      </div>
-                    </ion-col>
-                  </ion-row>
-                </ion-grid>
-              </ion-col>
-              <ion-col col-md-6 col-sm-12 col-xs-12 class="img-section1">
-              </ion-col>
             </ion-row>
-          </ion-grid>
-        </ion-card>
-        <ion-card class="customer-section">
-          <ion-grid no-padding>
+
             <ion-row align-items-center style="background-color:white">
-              <ion-col col-md-6 col-sm-12 col-xs-12>
-                <ion-grid no-padding>
-                  <ion-row align-items-center class="cust-title">
-                    <ion-col col-6 tappable align="left">
-                      <ion-item>
-                        <ion-avatar item-left class="img-section1" style="max-width: 20px">
-                          <ion-icon name="contact" class="icon-big"></ion-icon>
-                          <!--<ion-icon name="contact" class="icon-big" *ngIf="item.MainMediaUrl == ''"></ion-icon>
+              <ion-col col-1>
+                <ion-item>
+                  <ion-avatar item-left class="img-section1" style="max-width: 20px">
+                    <ion-icon name="contact" class="icon-big"></ion-icon>
+                    <!--<ion-icon name="contact" class="icon-big" *ngIf="item.MainMediaUrl == ''"></ion-icon>
                                                     <img src="{{item.MainMediaUrl}}&r=1" *ngIf="item.MainMediaUrl != ''" />-->
-                        </ion-avatar>
-                        <h6 class="customer-text">Paul PUSAG</h6>
-                      </ion-item>
-                    </ion-col>
-                    <ion-col col-6 align="center">
-                      <div style="float:left" class="customers-category-button">
-                        <h6 class="categorytext">
+                  </ion-avatar>
 
-                        </h6>
-                      </div>
-                      <div style="float:left;margin-left:5px" class="customers-group-button">
-                        <h6 class="subcategorytext-list">
+                </ion-item>
+              </ion-col>
+              <ion-col col-3 align="left">
+                <h6 class="customer-text">PAUL THE MAW</h6>
+              </ion-col>
+              <ion-col col-1 align="left">
+                <h6 class="customer-text">2</h6>
+              </ion-col>
 
-                        </h6>
-                      </div>
-                    </ion-col>
-                  </ion-row>
-                </ion-grid>
-              </ion-col>
-              <ion-col col-md-6 col-sm-12 col-xs-12 class="img-section1">
-              </ion-col>
             </ion-row>
-          </ion-grid>
-        </ion-card>
-        <ion-card class="customer-section">
-          <ion-grid no-padding>
+
             <ion-row align-items-center style="background-color:white">
-              <ion-col col-md-6 col-sm-12 col-xs-12>
-                <ion-grid no-padding>
-                  <ion-row align-items-center class="cust-title">
-                    <ion-col col-6 tappable align="left">
-                      <ion-item>
-                        <ion-avatar item-left class="img-section1" style="max-width: 20px">
-                          <ion-icon name="contact" class="icon-big"></ion-icon>
-                          <!--<ion-icon name="contact" class="icon-big" *ngIf="item.MainMediaUrl == ''"></ion-icon>
+              <ion-col col-1>
+                <ion-item>
+                  <ion-avatar item-left class="img-section1" style="max-width: 20px">
+                    <ion-icon name="contact" class="icon-big"></ion-icon>
+                    <!--<ion-icon name="contact" class="icon-big" *ngIf="item.MainMediaUrl == ''"></ion-icon>
                                                     <img src="{{item.MainMediaUrl}}&r=1" *ngIf="item.MainMediaUrl != ''" />-->
-                        </ion-avatar>
-                        <h6 class="customer-text">RANI THE BEST PUSAGGGG</h6>
-                      </ion-item>
-                    </ion-col>
-                    <ion-col col-6 align="center">
-                      <div style="float:left" class="customers-category-button">
-                        <h6 class="categorytext">
+                  </ion-avatar>
 
-                        </h6>
-                      </div>
-                      <div style="float:left;margin-left:5px" class="customers-group-button">
-                        <h6 class="subcategorytext-list">
+                </ion-item>
+              </ion-col>
+              <ion-col col-3 align="left">
+                <h6 class="customer-text">ANNA THE MEW POUCHAG</h6>
+              </ion-col>
+              <ion-col col-1 align="left">
+                <h6 class="customer-text">3</h6>
+              </ion-col>
 
-                        </h6>
-                      </div>
-                    </ion-col>
-                  </ion-row>
-                </ion-grid>
+            </ion-row>
+
+            <ion-row align-items-center style="background-color:white">
+              <ion-col col-1>
+                <ion-item>
+                  <ion-avatar item-left class="img-section1" style="max-width: 20px">
+                    <ion-icon name="contact" class="icon-big"></ion-icon>
+                    <!--<ion-icon name="contact" class="icon-big" *ngIf="item.MainMediaUrl == ''"></ion-icon>
+                                                    <img src="{{item.MainMediaUrl}}&r=1" *ngIf="item.MainMediaUrl != ''" />-->
+                  </ion-avatar>
+
+                </ion-item>
               </ion-col>
-              <ion-col col-md-6 col-sm-12 col-xs-12 class="img-section1">
+              <ion-col col-3 align="left">
+                <h6 class="customer-text">NINA THE NONA</h6>
               </ion-col>
+              <ion-col col-1 align="left">
+                <h6 class="customer-text">4</h6>
+              </ion-col>
+
+            </ion-row>
+
+            <ion-row align-items-center style="background-color:white">
+              <ion-col col-1>
+                <ion-item>
+                  <ion-avatar item-left class="img-section1" style="max-width: 20px">
+                    <ion-icon name="contact" class="icon-big"></ion-icon>
+                    <!--<ion-icon name="contact" class="icon-big" *ngIf="item.MainMediaUrl == ''"></ion-icon>
+                                                    <img src="{{item.MainMediaUrl}}&r=1" *ngIf="item.MainMediaUrl != ''" />-->
+                  </ion-avatar>
+
+                </ion-item>
+              </ion-col>
+              <ion-col col-3 align="left">
+                <h6 class="customer-text">RANI THE BEST NOOBY</h6>
+              </ion-col>
+              <ion-col col-1 align="left">
+                <h6 class="customer-text">5</h6>
+              </ion-col>
+
             </ion-row>
           </ion-grid>
         </ion-card>
