@@ -24,18 +24,18 @@
 
 <ion-content class="page" padding>
 
-  <ion-slides style="width:80%;height:300px">
+  <ion-slides style="width:100%;height:400px">
     <ion-slide>
 
-      <img src="https://sports-961.com/wp-content/uploads/2016/09/ping-pongpicture-848x580.jpg">
+      <img style="width:100%;height:400px" src="https://sports-961.com/wp-content/uploads/2016/09/ping-pongpicture-848x580.jpg">
     </ion-slide>
     <ion-slide>
-      <img src="https://sports-961.com/wp-content/uploads/2015/05/Lebanese-table-tennis-clubs-championship-29.jpg">
+      <img style="width:100%;height:400px" src="https://sports-961.com/wp-content/uploads/2015/05/Lebanese-table-tennis-clubs-championship-29.jpg">
     </ion-slide>
   </ion-slides>
 
-  <ion-grid no-padding class="fullheight">
-    <ion-row class="fullheight">
+  <ion-grid no-padding class="fullheight" style="margin-top: 20px">
+    <ion-row style="height: 60%">
       <ion-col col-12 col-sm-12 col-md-12 col-lg class="round-corner news-Container">
         <div class="news-title">
           <h6 class="sectionTitle">
@@ -44,7 +44,7 @@
         </div>
 
         <div id="news-content">
-          <ion-scroll scrollY="true" style="height: 80vh;">
+          <ion-scroll scrollY="true" style="height: 60vh;">
             <ion-spinner class="loading-center" *ngIf="loadingnews"></ion-spinner>
 
             <ion-card class="news-item" (click)="OpenNewsDetails(item)">
@@ -131,7 +131,7 @@
         </div>
 
         <div id="news-content">
-          <ion-scroll scrollY="true" style="height: 80vh;">
+          <ion-scroll scrollY="true" style="height: 60vh;">
             <ion-spinner class="loading-center" *ngIf="loadingnews"></ion-spinner>
 
             <ion-card class="news-item" (click)="OpenNewsDetails(item)">

@@ -27,6 +27,7 @@ export class MyApp {
       { title: 'News', component: HomePage },
       { title: 'Events', component: HomePage },
       { title: 'Committe', component: HomePage },
+      { title: 'Clubs', component: HomePage },
       { title: 'Players', component: HomePage },
       { title: 'Calendar', component: HomePage },
       { title: 'Archive', component: HomePage },
